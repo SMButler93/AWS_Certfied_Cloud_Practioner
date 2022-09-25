@@ -1,1 +1,13 @@
+#IAM:
 
+IAM stands for Identity Access Management.
+
+Through IAM, you can create users, modify user access, generate passwords, set password reset frequency and password necessities, create groups, and more.
+
+IAM users:
+Through the root user, you can create users. Each person should have their onw user account, and these accounts should not be shared. When creating a
+user, you assign permissins through a policy. The policy is a JSON document which states what a user is and isn't allowed to do and have access to. 
+
+You can assign these policies to an individual user and this is known as inline. What you can also do is create groups. These groups will be for users
+that share the same or similar job roles and will require the same permissions. You can create Admin, Developer, and more groups. These groups will then
+have a policy assigned to them and every user within that group will inherit the policy. Users may belong to multiple groups and have multiple policies.
