@@ -4,6 +4,7 @@ IAM stands for Identity Access Management.
 
 Through IAM, you can create users, modify user access, generate passwords, set password reset frequency and password necessities, create groups, and more.
 
+
 IAM users:
 Through the root user, you can create users. Each person should have their onw user account, and these accounts should not be shared. When creating a
 user, you assign permissins through a policy. The policy is a JSON document which states what a user is and isn't allowed to do and have access to. 
@@ -11,3 +12,116 @@ user, you assign permissins through a policy. The policy is a JSON document whic
 You can assign these policies to an individual user and this is known as inline. What you can also do is create groups. These groups will be for users
 that share the same or similar job roles and will require the same permissions. You can create Admin, Developer, and more groups. These groups will then
 have a policy assigned to them and every user within that group will inherit the policy. Users may belong to multiple groups and have multiple policies.
+
+
+MFA:
+
+MFA is multi-factor authentication. This is where a user must have a second form of authetication (Other than their password) when logging in. MFA is
+usually achieved through a virtual authentication device which may come in the form of the Authy or Google authentication apps on a device such as a phone,
+or a hardware keyfob (These come from 3rd party companies).
+
+The benefit of MFA is that if a password is leaked or compromised, it will not allow access without the secondary authentication. MFA is not a necessity,
+however it is not recommended and amazon will not be held responsible for MFA not bein in place. (See Shared reponsibility model).
+
+
+IAM Password Policy:
+
+It is recommended that you use strong passwords for your account to ensure high security. 
+
+Through IAM, you can set-up and ensure the following:
+  • Set a minimum password length
+  • Require specific character types: 
+    • including uppercase letters
+    • lowercase letters
+    • numbers
+    • non-alphanumeric characters
+  • Allow all IAM users to change their own passwords
+  • Require users to change their password after some time (password expiration)
+  • Prevent password re-use
+ 
+
+IAM Access:
+
+You can access AWS through various ways:
+  • AWS Management Console (protected by password + MFA)
+  • AWS Command Line Interface (CLI): protected by access keys
+  • AWS Software Developer Kit (SDK) - for code: protected by access keys
+
+Access keys are generated through the AWS console. Users manage their own access keys. These access keys are like usernames and passwords and therefore
+should not be shared.
+
+
+AWS - CLI and SDK:
+
+CLI = Command Line Interface:
+  • A tool that enables you to interact with AWS services using commands in your command-line shell
+  • Direct access to the public APIs of AWS services
+  • You can develop scripts to manage your resources
+  • It’s open-source https://github.com/aws/aws-cli
+  • Alternative to using AWS Management Console
+
+SDK = Software Development Kit:
+  • AWS Software Development Kit (AWS SDK)
+  • Language-specific APIs (set of libraries)
+  • Enables you to access and manage AWS services programmatically
+  • Embedded within your application
+  
+  
+IAM Roles:
+
+IAM roles are for AWS services. Some services such as EC2 will need to complete actions on your behalf. Due to this, we can use IAM Roles to create
+policies for these services, much like we would for a user.
+
+Common roles:
+  • EC2 Instance Roles
+  • Lambda Function Roles
+  • Roles for CloudFormation
+  
+  
+IAM Security Tools:
+
+IAM Credential Report (account-level):
+The credential report a report that lists all your account's users and the status of their various credentials.
+
+IAM Access Advisor (user-level):
+The access advisor shows the service permissions granted to a user and when those services were last accessed. You can use this information to revise
+your policies. Remember - Policies should be set based on the least privilege principle.
+
+
+IAM Guidelines & Best Practices:
+  • Don’t use the root account except for AWS account setup 
+  • One physical user = One AWS user
+  • Assign users to groups and assign permissions to groups
+  • Create a strong password policy
+  • Use and enforce the use of Multi Factor Authentication (MFA)
+  • Create and use Roles for giving permissions to AWS services
+  • Use Access Keys for Programmatic Access (CLI / SDK)
+  • Audit permissions of your account with the IAM Credentials Report 
+  • Never share IAM users and Access Keys
+  
+  
+Shared responsibility model for IAM:
+
+AWS are responsible for:
+  • Infrastructure (global network security)
+  • Configuration and vulnerability analysis
+  • Compliance validation
+
+You are responsible for:
+  • Users, Groups, Roles, Policies management and monitoring
+  • Enabling MFA on all accounts
+  • Rotating all your keys often
+  • Use IAM tools to apply appropriate permissions
+  • Analysing access patterns and reviewing permissions
+  
+  
+IAM sumary:
+  • Users: mapped to a physical user, has a password for AWS Console
+  • Groups: contains users only
+  • Policies: JSON document that outlines permissions for users or groups 
+  • Roles: for EC2 instances or AWS services
+  • Security: MFA + Password Policy
+  • AWS CLI: manage your AWS services using the command-line
+  • AWS SDK: manage your AWS services using a programming language 
+  • Access Keys: access AWS using the CLI or SDK
+  • Audit: IAM Credential Reports & IAM Access Advisor
