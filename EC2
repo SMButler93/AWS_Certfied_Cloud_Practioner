@@ -27,3 +27,42 @@ EC2 size and configuration options and choices:
  
 EC2 User Data:
 
+We can use EC2 user data script to bootstarp our instances. This essentially means launching commands when we first boot up the
+machine. This is only run once and does not repeat once the instance is up and runing.
+
+We use 
+this EC2 user data to automate boot tasks such as:
+  • Installing updates
+  • Installing software
+  • Downloading common files from the internet
+  • Pretty much anything you can think of!
+ 
+ It is important to remember that the user data script runs with the root user.
+ 
+ 
+ EC2 instance types:
+ 
+ When launching and creating EC2 instances, you can choose different configurations to match the task you want them to perform.
+ Before we look at these different types, take not eof the nmaing conventions used by AWS:
+ 
+ You will be presented with something like this:
+ 
+ t2.2xlarge
+
+The 'T' represents the instance class (more on these shortly)
+The '2' represents the generation. (This will change as AWS updata and improve)
+The '2xlarge' is the size within the instance class.
+
+
+Instnace Types:
+
+General Purpose:
+
+
+Compute Optimised 
+
+
+Memory Optimised
+
+
+Storage Optimised
