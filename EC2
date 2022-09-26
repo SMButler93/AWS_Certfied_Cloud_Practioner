@@ -1,1 +1,29 @@
+#EC2
+
+EC2 = Elastic Compute Cloud.
+
+This is an IaaS service from AWS (Infrastructure as a service).
+
+This one of AWS' most popular services. It consists of the following:
+  • Renting virtual machines (EC2 - Elastic Cloud Compute)
+  • Storing data on virtual drives (EBS - Elastic Block Store)
+  • Distributing load across machines (ELB - Elastic Load Balancing)
+  • Scaling the services using an auto-scaling group (ASG - Auto Scaling Groups)
+
+Knowing EC2 is fundamental to understanding how the cloud actually works.
+
+
+EC2 size and configuration options and choices:
+  • Operating System (Mac, Windows, Linux)
+  • The amount of computing power and cores (CPU)
+  • The amount of random access memory (RAM)
+  • The amount of stgorage space:
+    • Network attached (EBS and EFS)
+    • Hardware (EC2 Instance store)
+  • Firewall rukes - The security group.
+  • Network card - Public IP address and speed of the card.
+  • Bootstrap script (scripts that will run when the instance is first booted up hence the name 'BOOTstrap')
+  
+ 
+EC2 User Data:
 
