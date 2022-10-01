@@ -82,4 +82,23 @@ Memory Optimised:
 
 
 Storage Optimised:
+• Great for storage instensive tasks that require high read and write access to large data sets on local storage
+• Examples of use cases:
+    • High frequency online transaction
+    • SQL and NoSQL databases
+    • Cache for in memory databases
+    • Data warehosuing apps
+    • Distributing file systems
 
+
+Security groups:
+
+Security groups are the fundamentals of networking security in AWS. They control how traffic is allowed in and out of an EC2 instance.
+These security groups contain 'allow' rules. These rules allow incoming or outgoing traffic based on either the IP adress or a security
+group (EC2 instance to EC2 instance).
+
+Security groups are acting as a firewall on our EC2 instances. They regulate:
+• Access to ports
+• Authorise IP ranges (IPV4 and IPV6)
+• Control inbound network
+• Control Outbound network.
