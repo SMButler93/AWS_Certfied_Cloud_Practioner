@@ -57,12 +57,29 @@ The '2xlarge' is the size within the instance class.
 Instnace Types:
 
 General Purpose:
+• Great for a diversity of workloads such as web servers or code repositories
+• They have a balance between computer memory and networking.
+• An example of a general purpose instance would be the t2.micro (included in the free tier of AWS)
 
 
-Compute Optimised 
+Compute Optimised:
+• Compute Optimised instances are great for compute-intensive tasks that need high performance processors.
+• Examples of use cases:
+    • Batch processing workloads
+    • Media transcoding
+    • High performance web servers
+    • Machine learning and scientific modeling
+    • Dedicated gaming servers.
 
 
-Memory Optimised
+Memory Optimised:
+• Fast performance for workloads that process large amounts of stat sets in memory.
+• Examples of use cases:
+    • High performance relational/non-relational data bases
+    • Distributed web scalecache stores
+    • In memory databases optimised for business intelligence
+    • Apps performing real-time processing of big and unstructured data
 
 
-Storage Optimised
+Storage Optimised:
+
