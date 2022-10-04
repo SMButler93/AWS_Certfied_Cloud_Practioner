@@ -11,3 +11,42 @@ AWS owns and maintains the servers and their hardware. As a user, you provison a
 
 Problems solved by the cloud:
 
+Flexibility: You can change the resource types when needed.
+Cost eefective: Pay-as-you-go. You only pay for what you use.
+Scalability: Accomodate larger loads by making hardware stronger or adding aditional nodes.
+Elasticity: Ability to scale out and in as and when needed.
+High availibility and fault tolerence: Built accross multiple data centres.
+Agility: Focus less on infrastructure and spend more time focusing on your product allowing you to rapidly develop, test and launch
+software applications.
+
+
+The 6 advantages of cloud computing:
+
+1. Trade capital expense (CAPEX) for operational expense (OPEX). This means you pay on demand and don't own hardware. This results in
+resduced total cost of ownership (TCO) and operational exense (OPEX)
+
+2. You benefit from massive economies of scale - Prices are reduced as AWS is more efficient due to it's large scale.
+
+3. Stop guessing capacity - You can scale based on your actual measured usage.
+
+4. Increase speed and agility.
+
+5. Stop spending money running and maintaining data centres.
+
+6. Go global in minutes: leverage the AWS global infrastructure.
+
+
+
+The 5 characteristics of cloud computing:
+
+1. ON-demand service - No human interaction necessary. You can just aquire resources through the web app.
+
+2. Broad network access - resources available over network and can be accessed by diverse cliet platforms.
+
+3. Multi-tenancy and resources pooling - Multiple customers share the same infrastructure and apps with security and privacy.
+Multiple customers are serverd from the same physical resources.
+
+4. Rapid elasticity and scalibility - Automatically and quckly aquire and disose of resources when needed. Quickly and easily
+scale based on demand.
+
+5. measured device usage - usage is measured and users pay correctly for the resources they have used.
