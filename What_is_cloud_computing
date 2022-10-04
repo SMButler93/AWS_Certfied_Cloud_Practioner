@@ -67,3 +67,23 @@ Multiple customers are serverd from the same physical resources.
 scale based on demand.
 
 5. measured device usage - usage is measured and users pay correctly for the resources they have used.
+
+
+Pricing of cloud:
+There are 3 pricing fundamentals:
+
+1. Compute - Pay for compute time.
+2. Storage - Pay for data stored in the cloud.
+3. Data transfered out: ay for what is transfered out (Data transferred in is free.)
+
+These solve the expensive issues of traditional IT - With cloud computing you only pay for what you use.
+
+
+
+Examples of services offered through cloud computing:
+
+IaaS (Infrastructure as a service) - EC2 (Elastic compute cloud)
+
+PaaS (PLatform a s a service) - Elastic beanstalk
+
+SaaS - Many AWS services such as Rekogniton for machine learning.
