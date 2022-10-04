@@ -33,6 +33,23 @@ resduced total cost of ownership (TCO) and operational exense (OPEX)
 
 5. Stop spending money running and maintaining data centres.
 
+
+Cloud models:
+
+private cloud:
+- Cloud services used by a single organisation, not exposed to the public.
+- Complete control over every aspect
+- High security for sensitive applications
+- Meet specific business needs. 
+
+Public cloud:
+- Cloud resources owned and operated by a 3rd party cloud service provider delivered over the internet.
+- Six advantages of coud computing (mentioned above)
+
+Hybrid coud:
+- keep some servers on premesis and extend some capabilities to the cloud
+- Control over sensetive assests in your private infrastructure.
+- Flexibility and cost effectiveness of the public cloud.
 6. Go global in minutes: leverage the AWS global infrastructure.
 
 
